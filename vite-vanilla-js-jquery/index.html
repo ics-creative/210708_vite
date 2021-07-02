@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>サンプル：vite-vanilla-js（フレームワーク等を使わないピュアなJavaScript）</h1>
+      <p>
+        以下はミニマムなTODOリストのサンプルです（<a href="">ソースコード</a>）。
+        viteを利用することで、VueやReactのようなフレームワークを使わなくても
+        import/exportを使った効率的な開発が行えることを確認してください。
+      </p>
+
+      <div id="sample">
+        <div id="todoInput">
+          <input type="text" id="itemInput" placeholder="新しいtodo" />
+          <button id="addButton">追加</button>
+        </div>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

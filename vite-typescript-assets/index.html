@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="sample1">
+        <h2>サンプル1：assetsフォルダの画像をスクリプトからimportして使う</h2>
+        <button class="addIconButton">犬 or 猫をランダムに追加</button>
+        <div class="icons"></div>
+      </section>
+
+      <section class="sample2">
+        <h2>サンプル2：スタティックなアセット（publicフォルダ）を使用する</h2>
+        <label
+          >ランク：
+          <select class="rankSelect">
+            <option value="">選択してください</option>
+            <option value="matsu">松</option>
+            <option value="take">竹</option>
+            <option value="ume">梅</option>
+          </select>
+        </label>
+        <div class="preview"></div>
+      </section>
+    </div>
+    <footer>画像素材：<a href="http://flat-icon-design.com/">FLAT ICON DESIGN</a></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

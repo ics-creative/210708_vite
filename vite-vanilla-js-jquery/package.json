@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.3.8"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
