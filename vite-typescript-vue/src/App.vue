@@ -3,11 +3,8 @@
     <h1>Vite + TypeScript + Vueサンプル</h1>
     <p>
       Vite + TypeScript + Vue（+ VueRouter & Vuex）のサンプルです。 Viteの標準テンプレートでvue-ts（Vue +
-      TypeScript）を選択した上で、 VueRouterとVuexを後から追加しています。<a href="https://github.com/ics-creative/210708_vite/tree/main/vite-typescript-vue">ソースコード</a>
-    </p>
-    <p>
-      このサンプルではVueRouterを使ってHomeとAboutの1ページを切り替え、
-      各ページでVuexストアを使ったカウンターの表示・操作が行えます。
+      TypeScript）を選択した上で、 VueRouterとVuexを後から追加しています。<a href="https://github.com/ics-creative/210708_vite/tree/main/vite-typescript-vue">ソースコード</a><br>
+      このサンプルではVueRouterを使ってHomeとAboutの2ページを切り替え、各ページでVuexストアを使ったカウンターの表示・操作が行えます。
     </p>
   </div>
 
