@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  margin: 0;
+  padding: 30px 10%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,10 +18,17 @@
 
 h1 {
   font-size: 24px;
+  text-align: left;
+}
+
+.info {
+  font-size: 13px;
+  padding: 10px 0 40px 0;
+  text-align: left;
 }
 
 #sample {
-  border: 1px solid #2c3e50;
+  border: 2px solid #2c3e50;
   border-radius: 4px;
   max-width: 600px;
   margin: auto;
@@ -29,7 +42,7 @@ h1 {
 }
 
 #todoInput input {
-  width: 80%;
+  width: calc(100% - 120px);
   height: 28px;
   padding: 4px;
   font-size: 16px;
@@ -37,13 +50,13 @@ h1 {
   border-radius: 2px;
 }
 #todoInput button {
-  width: 15%;
-  height: 28px;
-  font-size: 16px;
+  width: 100px;
+  height: 29px;
   border: 2px solid #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: transparent;
   color: #fff;
+  font-weight: bold;
 }
 
 #todoList {
@@ -56,19 +69,21 @@ h1 {
 
 #todoList li {
   display: flex;
+  align-items: center;
+  padding: 0 12px;
 }
 
 #todoList li p {
   width: calc(100% - 100px);
   font-size: 18px;
   text-align: left;
-  padding-left: 12px;
 }
 
 #todoList li button {
   width: 100px;
+  height: 28px;
   border: none;
-  background-color: rgb(210, 60, 30);
+  background-color: #e26172;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;

@@ -1,31 +1,58 @@
-#app {
+$textColor: #2c3e50;
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $textColor;
+}
+
+#app {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 section {
+  width: 50%;
   max-width: 514px;
-  margin: auto;
+  min-width: 300px;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+h2 {
+  text-align: left;
+}
+
+button, select {
+  border: 2px solid $textColor;
+  color: $textColor;
+  background-color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .sample1 {
+  .controls {
+    padding: 20px;
+  }
   .icons {
     display: flex;
     flex-wrap: wrap;
-    min-height: 128px;
-    border: 1px solid #aaa;
+    min-height: 256px;
+    border: 1px solid $textColor;
   }
 }
 
 .sample2 {
+  .controls {
+    padding: 20px;
+  }
   .preview {
     width: 256px;
     height: 256px;
-    border: 1px solid #aaa;
+    border: 1px solid $textColor;
     margin: auto;
   }
 }

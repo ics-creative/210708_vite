@@ -10,21 +10,25 @@
     <div id="app">
       <section class="sample1">
         <h2>サンプル1：assetsフォルダの画像をスクリプトからimportして使う</h2>
-        <button class="addIconButton">犬 or 猫をランダムに追加</button>
+        <div class="controls">
+          <button class="addIconButton">犬 or 猫をランダムに追加</button>
+        </div>
         <div class="icons"></div>
       </section>
 
       <section class="sample2">
         <h2>サンプル2：スタティックなアセット（publicフォルダ）を使用する</h2>
-        <label
-          >ランク：
-          <select class="rankSelect">
-            <option value="">選択してください</option>
-            <option value="matsu">松</option>
-            <option value="take">竹</option>
-            <option value="ume">梅</option>
-          </select>
-        </label>
+        <div class="controls">
+          <label
+            >ランク：
+            <select class="rankSelect">
+              <option value="">選択してください</option>
+              <option value="matsu">松</option>
+              <option value="take">竹</option>
+              <option value="ume">梅</option>
+            </select>
+          </label>
+        </div>
         <div class="preview"></div>
       </section>
     </div>

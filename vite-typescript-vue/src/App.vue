@@ -23,14 +23,15 @@
         </li>
       </ul>
     </nav>
-    <div class="resetCount">
-      <button @click="reset">すべてのカウントをリセット</button>
-    </div>
   </header>
 
   <!-- VueRouterで切り替える部分 -->
   <div class="pageArea">
     <routerView />
+  </div>
+
+  <div class="resetCount">
+    <button @click="reset">すべてのカウントをリセット</button>
   </div>
 </template>
 
@@ -58,36 +59,48 @@ export default defineComponent({
 // SCSSを利用するためにsassのインストールを行う必要があります
 // npm i -D sass
 
+$textColor: #2c3e50;
+$primary: #61b3e6;
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $textColor;
+  padding: 30px 10%;
 }
 h1,
 h2 {
   margin: 0;
   padding: 10px;
 }
+button {
+  border: 2px solid $textColor;
+  color: $textColor;
+  background-color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+}
 header {
-  padding: 30px;
+  margin: 0;
+  padding: 20px 0 2px 0;
 }
 nav {
   ul {
+    margin: 0;
+    border-bottom: 1px solid $primary;
     list-style-type: none;
     display: flex;
     justify-content: center;
     padding: 0;
     li {
-      border: 1px solid #2c3e50;
       width: 120px;
       height: 24px;
       font-size: 16px;
       font-weight: bold;
       &.selected {
-        background-color: #2c3e50;
+        background-color: $primary;
         color: #fff;
       }
       a {
@@ -97,10 +110,16 @@ nav {
   }
 }
 .description {
-  padding: 10px 30px;
+  padding: 10px 0;
+  text-align: left;
 }
 .pageArea {
-  border: 1px solid #2c3e50;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2f0f4;
   padding: 30px;
+  min-height: 300px;
 }
 </style>

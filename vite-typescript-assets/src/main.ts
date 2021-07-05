@@ -10,6 +10,7 @@ const initSample1 = () => {
     const img = new Image()
     img.src = icon
     img.width = 128
+    img.height = 128
     iconsArea?.appendChild(img)
   })
 }
