@@ -9,7 +9,7 @@
 ViteでプレーンなJavaScript（バニラJS）を使用したサンプルプロジェクトです。構築時のコマンドは下記の通りです。
 
 ```sh
-npm init @Vitejs/app
+npm init @vitejs/app
 ? Project name: › hello-vite # ①プロジェクト名を入力
 ? Select a framework: › - Use arrow-keys. Return to submit.
 ❯   vanilla # ②フレームワークを選択（vanilla = フレームワークを使わない）
@@ -27,9 +27,9 @@ npm init @Vitejs/app
 
 ```sh
 # npmの場合
-npm init @Vitejs/app hello-vite -- --template vanilla
+npm init @vitejs/app hello-vite -- --template vanilla
 # yarnの場合
-yarn create @Vitejs/app hello-vite --template vanilla
+yarn create @vitejs/app hello-vite --template vanilla
 ```
 
 このサンプルでは構築後、以下の方法で`jQuery`を導入しています。
@@ -45,7 +45,7 @@ npm install jquery
 ViteでシンプルにTypeScriptを利用する例です。構築時のコマンドは下記の通りです。
 
 ```sh
-npm init @Vitejs/app
+npm init @vitejs/app
 ? Project name: › hello-vite-ts # ①プロジェクト名を入力
 ? Select a framework: › - Use arrow-keys. Return to submit.
 ❯   vanilla # ②フレームワークを選択（vanilla = フレームワークを使わない）
@@ -63,9 +63,9 @@ npm init @Vitejs/app
 
 ```sh
 # npmの場合
-npm init @Vitejs/app hello-vite -- --template vanilla-ts
+npm init @vitejs/app hello-vite -- --template vanilla-ts
 # yarnの場合
-yarn create @Vitejs/app hello-vite --template vanilla-ts
+yarn create @vitejs/app hello-vite --template vanilla-ts
 ```
 
 この例では3D表現のためのライブラリとしてThree.jsを導入しています。
@@ -81,7 +81,7 @@ npm install -D three @types/three
 Viteで画像等のアセットファイルを使用するサンプルです。構築時のコマンドは下記の通りです。
 
 ```sh
-npm init @Vitejs/app
+npm init @vitejs/app
 ? Project name: › hello-vite-ts # ①プロジェクト名を入力
 ? Select a framework: › - Use arrow-keys. Return to submit.
 ❯   vanilla # ②フレームワークを選択（vanilla = フレームワークを使わない）
@@ -109,7 +109,7 @@ npm init @Vitejs/app
 ViteでVue.jsを使用するサンプルです。構築時のコマンドは下記の通りです。
 
 ```sh
-npm init @Vitejs/app
+npm init @vitejs/app
 ? Project name: › hello-vite-vue # ①プロジェクト名を入力
 ? Select a framework: › - Use arrow-keys. Return to submit.
     vanilla
