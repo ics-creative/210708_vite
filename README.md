@@ -132,3 +132,66 @@ npm install vuex@next
 
 Vue Routerの設定は`/src/main.ts`と`/src/router.ts`を、Vuexの設定は同じく`/src/main.ts`と`/src/store.ts`を、それぞれ参照してください。
 
+## vite-typescript-ie
+
+- [動作サンプル](https://ics-creative.github.io/210708_vite/vite-typescript-ie/)
+
+Viteで作成したウェブページをIE11でも動作するようにビルドしたサンプルです。ここでは最初の例（vite-vanilla-js-jquery）のjQueryを使用したTODOアプリをTypeScript化したものをサンプルとして用いています。
+
+初期構築は下記の通り、通常のTypeScriptの例と同じです。
+
+```sh
+npm init @vitejs/app
+? Project name: › hello-vite-ie # ①プロジェクト名を入力
+? Select a framework: › - Use arrow-keys. Return to submit.
+❯   vanilla # ②フレームワークを選択（vanilla = フレームワークを使わない）
+    vue
+    react
+    preact
+    lit-element
+    svelte
+? Select a variant: › - Use arrow-keys. Return to submit.
+    vanilla 
+❯   vanilla-ts # ③TypeScriptを使う
+```
+
+またはまとめて下記の1行でも同じです。
+
+```sh
+# npmの場合
+npm init @vitejs/app hello-vite -- --template vanilla-ts
+# yarnの場合
+yarn create @vitejs/app hello-vite --template vanilla-ts
+```
+
+続けてjQueryとIEに対応させるためのプラグインをインストールします。
+
+```sh
+# jQueryとTypeScriptで　またないすんを使うための型定義をインストール
+npm install jquery
+npm install -D @types/jquery
+
+# IE11向けビルドを行うプラグインを追加
+@vitejs/plugin-legacy
+```
+
+最後にプラグインの設定を行なってIE向けビルドを有効にします。
+
+▼ vite.config.ts
+```ts
+import { defineConfig } from 'vite'
+import legacy from '@vitejs/plugin-legacy'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  // IE11向けの変換を行うプラグインの設定
+  plugins: [
+    legacy({
+      targets: ['ie >= 11'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime']
+    })
+  ]
+})
+```
+
+設定を保存してビルドを行うと、通常のビルドに加え、IE11向けのビルドを行います。
