@@ -172,7 +172,7 @@ npm install jquery
 npm install -D @types/jquery
 
 # IE11向けビルドを行うプラグインを追加
-@vitejs/plugin-legacy
+npm install -D @vitejs/plugin-legacy
 ```
 
 最後にプラグインの設定を行なってIE向けビルドを有効にします。
